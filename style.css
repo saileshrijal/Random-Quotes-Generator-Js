@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
+/* font-family: 'Sedgwick Ave Display', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Schoolbell&display=swap");
+/* font-family: 'Schoolbell', cursive; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #c0e3dd;
+  overflow: hidden;
+}
+
+.head {
+  text-align: center;
+  margin: 2rem 0;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 2rem;
+  color: #00c7a3;
+  font-weight: lighter;
+}
+
+.outline {
+  border: 0.2rem solid #00c7a3;
+  width: 45vw;
+  margin: auto;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+.quote_container {
+  padding: 4rem 2rem;
+  background-color: #00c7a3;
+  border-radius: 1rem;
+}
+
+.quote_container p {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "Schoolbell", cursive;
+  color: white;
+}
+
+.quote_container #quote {
+  margin-bottom: 2rem;
+}
+
+.button_container {
+  width: 50%;
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_container #button {
+  font-size: 2rem;
+  background-color: white;
+  color: #00c7a3;
+  font-weight: bold;
+  padding: 0.4rem;
+  border: none;
+  outline: none;
+  font-family: "Schoolbell", cursive;
+  display: flex;
+  gap: 0.3rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.button_container #button:hover {
+  background-color: whitesmoke;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+  .outline {
+    width: 90%;
+  }
+
+  .head {
+    font-size: 1.6rem;
+  }
+
+  body {
+    overflow-y: scroll;
+  }
+}
